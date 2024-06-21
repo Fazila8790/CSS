@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>tailwind-project</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .custom-image {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            /* width: calc(100% - 40px); 100% width minus the 20px offsets from both sides */
+            height: auto; /* maintain aspect ratio */
+            max-height: calc(50% - 20px); /* limit height to the header's height minus the offset */
+            object-fit: cover;
+            margin-top: 12%;
+            margin-left: 22%;
+            box-shadow: 8px 8px rgb(160, 234, 234);
+            border-radius: 5px;
+        }
+        .shadow-green:hover {
+            box-shadow: 4px 4px rgb(117, 242, 242);
+    }
+    </style>
+</head>
+<body class="bg-slate-300">
+    <div class="flex items-center justify-center h-screen">
+         <div class="h-3/5 w-3/5  bg-white font-serif">
+            <div class="h-2/5 bg-black flex flex-col items-center justify-center  ">
+                <h1 class="text-white text-center text-4xl mt-20 ">Retro Shoe</h1>
+                <p class="text-white text-center text-lg ">
+                    $ 100.00 <span class=" ml-4 text-blue-500">IN STOCK</span>
+                </p>
+            </div>
+            <div class="flex-grow  flex flex-col items-center justify-center relative">
+                <!-- Buttons row -->
+                <div class="flex space-x-4"> <!-- Adjusted margin-top for space between image and buttons -->
+                    <button class="bg-gray-200 text-blue-800 py-2 px-4 rounded w-16 h-12 hover:bg-gray-800 ml-60 mt-10 shadow-green">XS</button>
+                    <button class="bg-gray-200 text-blue-800 py-2 px-4 rounded w-16 h-12 hover:bg-gray-800 ml-60 mt-10 shadow-green">S</button>
+                    <button class="bg-gray-200 text-blue-800 py-2 px-4 rounded w-16 h-12 hover:bg-gray-800 ml-60 mt-10 shadow-green">M</button>
+                    <button class="bg-gray-200 text-blue-800 py-2 px-4 rounded w-16 h-12 hover:bg-gray-800 ml-60 mt-10 shadow-green">L</button>
+                    <button class="bg-gray-200 text-blue-800 py-2 px-4 rounded w-16 h-12 hover:bg-gray-800 ml-60 mt-10 shadow-green">XL</button>
+                </div>
+                <div class="flex space-x-4 mt-10">
+                    
+                    <button class="bg-blue-400 text-white py-3 w-36 h-12 rounded hover:bg-gray-800 ml-60  ">BUY NOW</button>
+                    <button class="bg-blue-400 text-white py-3 w-36 h-12 rounded hover:bg-gray-800 ">ADD TO BAG </button>
+                    <button ><i class="fas fa-heart "></i> </button> 
+                </div>
+                <p class="text-gray-600 text-s mt-4 ml-60 font-serif">Free shipping on all continental US orders</p>
+            </div>
+            <div class="max-w-screen-xl mx-auto px-4"></div>
+            <img src="https://peterandveronika.com/wp-content/uploads/2017/08/provence-film-wedding-photographers-peter-and-veronika-14.jpg" class="custom-image" alt="Example Image" class="w-full h-auto" >
+            </div>
+        </div>
+    </div>
+</body>
+</html>
